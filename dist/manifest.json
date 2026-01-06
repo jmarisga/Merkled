@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Merkled - Web-Based Cryptographic Digitial File Preservation Tool",
+  "version": "1.0.0",
+  "description": "Lightweight DFIR tool for file preservation using Merkle Tree cryptographic hashing",
+  "author": "Your Name",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Merkled - Digitial File Preservation Tool",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
